@@ -377,8 +377,9 @@ body {
 
 .hello__title {
   font-size: 3.125rem;
-  line-height: 3.75rem;
+  line-height: 4.375rem;
   padding: 1.5625rem 0;
+  text-align: center;
 }
 
 b {
@@ -616,11 +617,15 @@ b {
 
 /* Стили секции lesson */
 
+.lesson {
+  padding-bottom: 150px;
+}
+
 .lesson .container {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  font-family: arial, Helvetica, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   width: 900px;
   line-height: 1.33;
   -webkit-animation: bounceInRight 1s;
@@ -632,43 +637,176 @@ b {
   animation: bounceInLeft 1s;
 }
 
+.lesson__content {
+  padding: 100px 0 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.lesson__chapter {
+  line-height: 1;
+  color: #222222;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.lesson__chapter-name {
+  font-size: 36px;
+  line-height: 54px;
+  color: #222222;
+  font-weight: 800;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.lesson__chapter-name::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 70%;
+  height: 5px;
+  bottom: -20px;
+  left: 0;
+  background-color: #e8c762;
+}
+
+.lesson__video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  padding-bottom: 85px;
+}
+
+.lesson__video iframe {
+  border-radius: 15px;
+}
+
+.lesson__materials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
 .lesson__material {
   padding: 15px 0;
+  font-size: 18px;
+  line-height: 24px;
+  color: #222222;
 }
 
 .lesson__material:first-child {
   padding-top: 50px;
 }
 
-ul.lesson__list {
-  list-style-type: disc;
-  color: #000;
-  list-style-position: inside;
-  padding-left: 60px;
+.lesson__item {
+  padding: 10px 0;
+  font-size: 18px;
 }
 
-ul.lesson__list li {
-  list-style-type: disc;
+.lesson__item:first-child {
+  padding-top: 20px;
 }
 
 i {
-  color: #0000ff;
   font-family: Verdana, sans-serif;
-  font-style: italic;
+  font-weight: 700;
 }
 
 .lesson__title {
-  margin: 20px 0;
-  color: #45688e;
-  font-style: italic;
-  font-size: 20px;
-  font-weight: 700;
-  padding-left: 10px;
+  font-size: 36px;
+  line-height: 54px;
+  color: #222222;
+  font-weight: 800;
+  position: relative;
+  margin: 50px 0;
 }
 
-.lesson__go-next {
+.lesson__title::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 70%;
+  height: 5px;
+  bottom: -20px;
+  left: 0;
+  background-color: #e8c762;
+}
+
+.lesson__img {
+  padding: 20px 0;
+}
+
+.no_padding {
+  padding: 0;
+}
+
+.next-lesson {
+  background-image: url(../img/header2.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
   -ms-flex-item-align: center;
   align-self: center;
+  padding: 150px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.end {
+  position: relative;
+}
+
+.end:before {
+  content: "Следующий урок в разработке";
+  display: block;
+  position: absolute;
+  top: -50px;
+  left: -40px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.lesson1 {
+  background-image: url("../img/header2.jpg");
+}
+
+.lesson2 {
+  background-image: url("../img/header3.jpg");
 }
 
 /* Стили секции lesson */
