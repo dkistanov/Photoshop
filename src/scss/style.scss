@@ -1,0 +1,29 @@
+
+// ХЕЛПЕРЫ
+@import 'base/fonts.scss';
+@import 'base/vars.scss';
+
+
+// Общие стили
+@import 'base/settings.scss';
+@import 'base/general.scss';
+
+
+
+// Компоненты
+@import "common/common.scss";
+
+// Секции
+
+/* Стили секции hello */
+@import 'section/hello.scss';
+/* Стили секции hello */
+
+/* Стили секции features */
+@import 'section/features.scss';
+/* Стили секции features */
+
+/* Стили секции start */
+@import 'section/start.scss';
+/* Стили секции start */
+
