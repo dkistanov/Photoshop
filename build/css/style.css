@@ -368,8 +368,8 @@ body {
 }
 
 .hello .container {
-  -webkit-animation: fadein 2s;
-  animation: fadein 2s;
+  -webkit-animation: fadein 1s;
+  animation: fadein 1s;
 }
 
 .logo-wrap {
@@ -495,8 +495,8 @@ b {
 }
 
 .features .container {
-  -webkit-animation: fadetop 2s;
-  animation: fadetop 2s;
+  -webkit-animation: fadetop 1s;
+  animation: fadetop 1s;
 }
 
 .features__comment {
