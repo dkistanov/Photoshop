@@ -1,0 +1,47 @@
+.lesson .container {
+    align-items: flex-start;
+    font-family: arial, Helvetica, sans-serif;
+    width: 900px;
+    line-height: 1.33;
+    animation: bounceInRight 1s;
+}
+
+.lessons .container {
+    animation: bounceInLeft 1s;
+}
+
+.lesson__material {
+    padding: 15px 0;
+    &:first-child {
+        padding-top: 50px;
+    }
+}
+
+ul.lesson__list {
+    list-style-type: disc;
+    color: #000;
+    list-style-position: inside;
+    padding-left: 60px;
+    & li {
+        list-style-type: disc;
+    }
+}
+
+i {
+    color: #0000ff;
+    font-family: Verdana, sans-serif;
+    font-style: italic;
+}
+
+.lesson__title {
+    margin: 20px 0;
+    color: #45688e;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 700;
+    padding-left: 10px;
+}
+
+.lesson__go-next {
+    align-self: center;
+}

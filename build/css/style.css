@@ -112,6 +112,142 @@ textarea {
   }
 }
 
+@-webkit-keyframes bounceInLeft {
+  from, 60%, 75%, 90%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-3000px, 0, 0);
+    transform: translate3d(-3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(25px, 0, 0);
+    transform: translate3d(25px, 0, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(5px, 0, 0);
+    transform: translate3d(5px, 0, 0);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes bounceInLeft {
+  from, 60%, 75%, 90%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-3000px, 0, 0);
+    transform: translate3d(-3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(25px, 0, 0);
+    transform: translate3d(25px, 0, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(5px, 0, 0);
+    transform: translate3d(5px, 0, 0);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@-webkit-keyframes bounceInRight {
+  from, 60%, 75%, 90%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(3000px, 0, 0);
+    transform: translate3d(3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(-25px, 0, 0);
+    transform: translate3d(-25px, 0, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(-5px, 0, 0);
+    transform: translate3d(-5px, 0, 0);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes bounceInRight {
+  from, 60%, 75%, 90%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(3000px, 0, 0);
+    transform: translate3d(3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(-25px, 0, 0);
+    transform: translate3d(-25px, 0, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(-5px, 0, 0);
+    transform: translate3d(-5px, 0, 0);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
 @-webkit-keyframes fadenomove {
   from {
     opacity: 0;
@@ -198,15 +334,18 @@ body {
   font-weight: normal;
   white-space: nowrap;
   cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  background-image: none;
-  border: 1px solid transparent;
-  border-radius: 4px;
   color: #fff;
   text-transform: uppercase;
+  background-color: #2ecc71;
+  background-image: none;
+  border: 0;
+  -webkit-box-shadow: 0 3px 0 #029a43;
+  box-shadow: 0 3px 0 #029a43;
+  line-height: 1.33;
+  padding: 10px 28px;
+  border-radius: 3px;
+  height: 55px;
+  margin: 50px 0;
 }
 
 /* Конец блока buttons */
@@ -474,6 +613,65 @@ b {
 }
 
 /* Стили секции start */
+
+/* Стили секции lesson */
+
+.lesson .container {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  font-family: arial, Helvetica, sans-serif;
+  width: 900px;
+  line-height: 1.33;
+  -webkit-animation: bounceInRight 1s;
+  animation: bounceInRight 1s;
+}
+
+.lessons .container {
+  -webkit-animation: bounceInLeft 1s;
+  animation: bounceInLeft 1s;
+}
+
+.lesson__material {
+  padding: 15px 0;
+}
+
+.lesson__material:first-child {
+  padding-top: 50px;
+}
+
+ul.lesson__list {
+  list-style-type: disc;
+  color: #000;
+  list-style-position: inside;
+  padding-left: 60px;
+}
+
+ul.lesson__list li {
+  list-style-type: disc;
+}
+
+i {
+  color: #0000ff;
+  font-family: Verdana, sans-serif;
+  font-style: italic;
+}
+
+.lesson__title {
+  margin: 20px 0;
+  color: #45688e;
+  font-style: italic;
+  font-size: 20px;
+  font-weight: 700;
+  padding-left: 10px;
+}
+
+.lesson__go-next {
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+/* Стили секции lesson */
 
 @media (max-width: 1200px) {
   .container {
