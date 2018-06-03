@@ -28,3 +28,13 @@ $(document).ready(function(){
 	    return false; 
     });
 });
+
+// menu 
+
+$('.burger-menu').on('click', function(){
+    $('.menu__popup').css({'left':'0px','opacity':'1'});
+})
+
+$('.menu__close').on('click', function(){
+    $('.menu__popup').css({'left':'-200%','opacity':'0'});
+})

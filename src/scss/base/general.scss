@@ -15,11 +15,7 @@
 
 // футер к низу
 
-body {
-	display: flex;
-	flex-direction: column;
-
-}
 .main {
-	flex: 1
+	flex-direction: column;
+  	height: 100%;
 }
