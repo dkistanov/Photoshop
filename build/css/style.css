@@ -920,11 +920,6 @@ i {
 }
 
 .next-lesson {
-  background-image: url(../img/header2.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  background-size: cover;
   -ms-flex-item-align: center;
   align-self: center;
   padding: 150px 0;
@@ -961,11 +956,46 @@ i {
 }
 
 .lesson1 {
-  background-image: url("../img/header2.jpg");
+  background: url("../img/header2.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .lesson2 {
-  background-image: url("../img/header3.jpg");
+  background: url("../img/header3.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.lesson3 {
+  background: rgba(0, 0, 0, 0.4) url("../img/header4.jpg");
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.lesson4 {
+  background: rgba(0, 0, 0, 0.2) url("../img/header5.jpg");
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.lesson5 {
+  background: rgba(0, 0, 0, 0.5) url("../img/header6.jpg");
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 /* Стили секции lesson */
